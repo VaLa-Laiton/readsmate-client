@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Componentes
 import Nav from "./components/Nav";
 import Home from "./components/Home";
@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
+        <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -24,7 +24,7 @@ function App() {
         {/* <Route path="/dashboard/:userId" element={<Dashboard />} />
         <Route path="/dashboard/:userId/articles" element={<DashArticles />} /> */}
         <Route path="/profile" element={<Profile />} />
-        <Route path="*" element={<NotFoundPage/>}/>
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );
