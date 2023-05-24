@@ -43,6 +43,7 @@ const Publish = () => {
   };
 
   useEffect(() => {
+    document.title = "Publicar articulo - RADSMATE";
     if (isUser() === false) {
       redirect();
     }

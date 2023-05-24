@@ -9,7 +9,7 @@ import Publish from "./components/Publish";
 // import Dashboard from "./components/Dashboard";
 // import DashArticles from "./components/DashArticles";
 import Profile from "./components/Profile";
-import NotFoundPage from "./components/Lol";
+import NotFoundPage from "./components/NotFoundPage";
 
 function App() {
   return (

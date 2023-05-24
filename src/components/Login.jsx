@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { validateLogin } from "../functions/validateLogin";
 import { postUserLogin } from "../controllers/users";
 import { useNavigate } from "react-router-dom";
@@ -39,6 +39,10 @@ const Login = () => {
       );
     }
   };
+
+  useEffect(() => {
+    document.title = "Iniciar sesión - RADSMATE";
+  }, []);
 
   return (
     <div className="px-3">

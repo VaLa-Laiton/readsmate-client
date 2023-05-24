@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { validateSignup } from "../functions/validateSignup";
 import { postUserSignup } from "../controllers/users";
 import { useNavigate } from "react-router-dom";
@@ -42,6 +42,10 @@ const Signup = () => {
       );
     }
   };
+
+  useEffect(() => {
+    document.title = "Registro - RADSMATE";
+  }, []);
 
   return (
     <div className="px-3">

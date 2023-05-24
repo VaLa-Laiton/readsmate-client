@@ -80,6 +80,7 @@ const Profile = () => {
   };
 
   useEffect(() => {
+    document.title = "Perfil - RADSMATE";
     if (isUser() === false) {
       redirect();
     }
