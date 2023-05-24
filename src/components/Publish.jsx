@@ -31,8 +31,8 @@ const Publish = () => {
         console.log("YES2");
         setSuccessPost("Felicidades, se publico tu articulo exitosamente.");
         setTimeout(() => {
-          window.location.reload();
           window.location.href = "/";
+          window.location.reload();
         }, 3000);
       }
     } else {
