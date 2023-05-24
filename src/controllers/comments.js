@@ -1,7 +1,7 @@
 //  Consult all comments
 export const getComments = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/comment");
+      const response = await fetch("https://readsmate-restapi-production.up.railway.app/api/comment");
       const data = await response.json();
       const dataString = JSON.stringify(data);
       localStorage.setItem("getComments", dataString);

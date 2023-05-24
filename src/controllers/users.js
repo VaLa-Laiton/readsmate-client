@@ -6,7 +6,7 @@ export const getUserById = null;
 
 //  POST User Login
 export const postUserLogin = async ({ email, password }) => {
-  const url = "http://127.0.0.1:3000/api/user/log-in";
+  const url = "https://readsmate-restapi-production.up.railway.app/api/user/log-in";
 
   const data = {
     email: email,
@@ -37,7 +37,7 @@ export const postUserLogin = async ({ email, password }) => {
 
 //  POST User Signup
 export const postUserSignup = async ({ nickname, email, password }) => {
-  const url = "http://127.0.0.1:3000/api/user/sign-up";
+  const url = "https://readsmate-restapi-production.up.railway.app/api/user/sign-up";
 
   const data = {
     nickname: nickname,
@@ -69,7 +69,7 @@ export const postUserSignup = async ({ nickname, email, password }) => {
 
 // Update user
 export const updateUser = async ({ dataUpdate, token, userId }) => {
-  const url = `http://localhost:3000/api/user/${userId}`;
+  const url = `https://readsmate-restapi-production.up.railway.app/api/user/${userId}`;
 
   const data = dataUpdate;
 
@@ -93,7 +93,7 @@ export const updateUser = async ({ dataUpdate, token, userId }) => {
 
 // Delete user
 export const deleteUser = async ({ token, userId }) => {
-  const url = `http://localhost:3000/api/user/${userId}`;
+  const url = `https://readsmate-restapi-production.up.railway.app/api/user/${userId}`;
 
   const options = {
     method: "DELETE",

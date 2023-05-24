@@ -1,7 +1,7 @@
 //  Consult all articles
 export const getArticles = async () => {
   try {
-    const response = await fetch("http://localhost:3000/api/article");
+    const response = await fetch("https://readsmate-restapi-production.up.railway.app/api/article");
     const data = await response.json();
     const dataString = JSON.stringify(data);
     localStorage.setItem("getArticles", dataString);
@@ -15,7 +15,7 @@ export const getArticleById = null;
 
 // Create article
 export const createArticle = async ({ token, dataArticle }) => {
-  const url = "http://127.0.0.1:3000/api/article";
+  const url = "https://readsmate-restapi-production.up.railway.app/api/article";
 
   const data = dataArticle;
 
