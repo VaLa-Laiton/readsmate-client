@@ -1,7 +1,7 @@
 export const logout = () => {
   localStorage.removeItem("dataUser");
   window.location.reload();
-  window.location.href = "/home"
+  window.location.href = "/"
 };
 
 export const logoutUpdate = () => {
@@ -22,7 +22,7 @@ export const automaticLogout = () => {
     if (currentDate - creationDate > expirationDate) {
       localStorage.removeItem("dataUser");
       window.location.reload();
-      window.location.href = "/home"
+      window.location.href = "/"
     }
   }
 };

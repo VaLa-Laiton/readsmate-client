@@ -12,7 +12,7 @@ const Login = () => {
 
   const redirect = () => {
     setTimeout(() => {
-      navigate("/home");
+      navigate("/");
       window.location.reload();
     }, 3000);
   };

@@ -8,5 +8,5 @@ export const isUser = () => {
 };
 
 export const redirect = () => {
-  window.location.href = "/home"
+  window.location.href = "/"
 };

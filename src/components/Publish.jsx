@@ -32,7 +32,7 @@ const Publish = () => {
         setSuccessPost("Felicidades, se publico tu articulo exitosamente.");
         setTimeout(() => {
           window.location.reload();
-          window.location.href = "/home";
+          window.location.href = "/";
         }, 3000);
       }
     } else {
